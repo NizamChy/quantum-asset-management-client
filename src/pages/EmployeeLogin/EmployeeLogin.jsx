@@ -50,20 +50,12 @@ const EmployeeLogin = () => {
 
   return (
     <div>
-     <h2 className="text-2xl text-center">Join as Employee</h2>
+
      <ToastContainer />
       {/* Sign in */}
       <div>
-        <div className="hero ">
+        <div className="hero mt-16">
           <div className="hero-content flex-col lg:flex-row">
-            <div className="text-center lg:text-left md:w-1/2">
-              <h1 className="text-2xl lg:text-3xl font-bold text-center">
-                Login to connect with us.
-              </h1>
-
-              {/* <img className="w-[96%] h-[96%] mt-3" src="/images/Login.gif" alt="" /> */}
-              <p>Hey there.............</p>
-            </div>
             <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
               <form onSubmit={handleSignin} className="card-body">
               

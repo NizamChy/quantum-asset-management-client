@@ -39,7 +39,7 @@ const AdminRegister = () => {
     // const birthDate = form.birthDate.value;
     const email = form.email.value;
     const password = form.password.value;
-
+    const userPhoto = form.userPhoto.value;
     const minLength = 6;
     const hasCapitalLetter = /[A-Z]/.test(password);
     const hasSpecialCharacter = /[!@#$%^&*()_+{}\[\]:;<>,.?~\\/\-]/.test(
@@ -67,6 +67,7 @@ const AdminRegister = () => {
         updateProfile(result.user, {
           displayName: name,
           // birthDate: birthDate,
+          photoURL: userPhoto,
           email: email,
         })
           .then(() => {
@@ -184,7 +185,7 @@ const AdminRegister = () => {
                   />
                 </div>
                 {/* company logo */}
-                <div className="form-control">
+                {/* <div className="form-control">
                   <label className="label">
                     <span className="label-text font-semibold">Company Logo</span>
                   </label>
@@ -195,7 +196,23 @@ const AdminRegister = () => {
                     className="input input-bordered"
                     
                   />
+                </div> */}
+                 {/* user photo url  */}
+                 <div className="form-control">
+                  <label className="label">
+                    <span className="label-text font-semibold">
+                      Photo Url
+                    </span>
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="photo url"
+                    name="userPhoto"
+                    className="input input-bordered"
+                    required
+                  />
                 </div>
+                {/* user photo url  */}
                 {/* select a package */}
                 <div className="form-control">
                   <label className="label">

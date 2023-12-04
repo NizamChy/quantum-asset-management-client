@@ -70,7 +70,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <NavLink
-                      to="/adminregister"
+                      to="/employeelogin"
                       className={({ isActive, isPending }) =>
                         isPending ? "pending" : isActive ? "underline" : ""
                       }
@@ -154,7 +154,8 @@ const Navbar = () => {
                     Add an Asset
                   </NavLink>
                 </li>
-                <li>
+
+                {/* <li>
                   <NavLink
                     to="/allrequest"
                     className={({ isActive, isPending }) =>
@@ -163,7 +164,8 @@ const Navbar = () => {
                   >
                     All Request
                   </NavLink>
-                </li>
+                </li> */}
+
                 <li>
                   <NavLink
                     to="/users"
@@ -209,7 +211,7 @@ const Navbar = () => {
             </li>
              <li>
               <NavLink
-                to="/requestasset"
+                to="/assetlist"
                 className={({ isActive, isPending }) =>
                   isPending ? "pending" : isActive ? "underline" : ""
                 }
@@ -252,7 +254,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <NavLink
-                    to="/adminregister"
+                    to="/adminlogin"
                     className={({ isActive, isPending }) =>
                       isPending ? "pending" : isActive ? "underline" : ""
                     }

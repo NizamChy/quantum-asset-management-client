@@ -16,7 +16,7 @@ const Banner = () => {
                 <div className="max-h-[75vh]">
                     <img className="rounded-lg" src={img2} />
                     {/* <p className="legend">Legend 2</p> */}
-                    <Link to="/adminregister">
+                    <Link to="/adminlogin">
                     <button className="btn  legend ">Join as HR/Admin</button>
                     </Link>
                     

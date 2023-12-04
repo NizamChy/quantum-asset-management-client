@@ -13,6 +13,8 @@ import AdminRoutes from "./AdminRoutes";
 import AssetList from "../pages/forAdmin/AssetList";
 import UpdateAsset from "../pages/forAdmin/UpdateAsset";
 import PrivateRoutes from "./PrivateRoutes";
+import MyAssets from "../pages/myAssets/MyAssets";
+import Profile from "../pages/profile/Profile";
 
 export const router = createBrowserRouter([
   {
@@ -43,6 +45,14 @@ export const router = createBrowserRouter([
       {
         path: "/adminlogin",
         element: <AdminLogin></AdminLogin>,
+      },
+      {
+        path: "/myassets",
+        element: <MyAssets></MyAssets>,
+      },
+      {
+        path: "/profile",
+        element: <Profile></Profile>,
       },
 
       // admin routes 

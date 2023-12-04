@@ -115,18 +115,17 @@ const AddAsset = () => {
           </div>
 
           <div className="form-control md:w-1/2 md:ml-4">
-            <label className="label">
-              <span className="label-text font-semibold">Product Type</span>
-            </label>
-            <label className="input-group">
-              <input
-                type="text"
-                placeholder="product type"
-                name="type"
-                className="input input-bordered w-full"
-              />
-            </label>
-          </div>
+  <label className="label">
+    <span className="label-text font-semibold">Product Type</span>
+  </label>
+  <label className="">
+    <select name="type" className="select select-bordered w-full select-input">
+      <option value="returnable">Returnable</option>
+      <option value="non-returnable">Non-returnable</option>
+    </select>
+  </label>
+</div>
+
 
         </div>
         
