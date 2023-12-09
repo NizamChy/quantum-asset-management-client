@@ -17,6 +17,7 @@ const AssetList = () => {
     const navigate = useNavigate();
     const location = useLocation();
     const axiosSecure = useAxiosSecure();
+    const axiosPublic = useAxiosPublic();
     const [, refetch] = useMyAssets();
 
   useEffect(() => {
@@ -52,6 +53,7 @@ const AssetList = () => {
 
       console.log(myAssetItem)
       axiosSecure.post('/myassets', myAssetItem)
+      axiosPublic.post('/allrequests', myAssetItem)
           .then(res => {
               console.log(res.data)
               if (res.data.insertedId) {

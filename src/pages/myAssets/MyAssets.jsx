@@ -1,12 +1,14 @@
 import Swal from "sweetalert2";
 import useMyAssets from "../../hooks/useMyAssets";
 import useAxiosSecure from "../../hooks/useAxiosSecure";
+import useAxiosPublic from "../../hooks/useAxiosPublic";
 
 const MyAssets = () => {
 
   const [myAssets, refetch] = useMyAssets();
 
   const axiosSecure = useAxiosSecure();
+  const axiosPublic = useAxiosPublic();
 
   const handleCancel = id => {
     Swal.fire({
@@ -20,7 +22,9 @@ const MyAssets = () => {
     }).then((result) => {
         if (result.isConfirmed) {
 
+          // axiosPublic.delete(`/allrequests/${id}`)
             axiosSecure.delete(`/myassets/${id}`)
+           
                 .then(res => {
                     if (res.data.deletedCount > 0) {
                         refetch();
