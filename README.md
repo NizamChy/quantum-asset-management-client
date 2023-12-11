@@ -11,3 +11,13 @@ Quantum Asset Management is a web application built using the MERN (MongoDB, Exp
 - **Asset Management:** Users can add, edit, and delete assets, providing a seamless experience for managing their financial portfolio.
 
 - **Responsive Design:** The application is designed to be responsive and accessible across various devices and screen sizes.
+
+
+## Technologies Used
+
+- React
+- Firebase
+- React Router
+- Node.js
+- Express
+- MongoDB
